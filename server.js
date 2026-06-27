@@ -22,7 +22,7 @@ app.use("/api/paystack", paystackRoutes);   // ✅ FIXED — now app exists
 
 // MongoDB
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect("mongodb://127.0.0.1:27017/perfume_store")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
